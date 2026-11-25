@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Bear Birthday Journal 🍒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-decor decor-cherry">🍒</div>
+  <div class="floating-decor decor-heart">💗</div>
+  <div class="floating-decor decor-bow">🎀</div>
+
+  <header class="cover" id="home">
+    <div class="cover-tape">A LITTLE JOURNAL FOR YOU</div>
+    <div class="cover-teddy" aria-label="Teddy bear">🧸</div>
+    <p class="small-title">Volume 01 · A special day</p>
+    <h1>Happy Birthday,<br><span>Sweet Cherry!</span></h1>
+    <p class="cover-intro">
+      A tiny journal filled with birthday wishes, sweet memories,
+      and little things made just for you.
+    </p>
+    <a class="open-journal" href="#journal">Open my journal ↓</a>
+    <div class="cover-stickers">
+      <span>🍓</span><span>💌</span><span>🌷</span><span>🍒</span>
+    </div>
+  </header>
+
+  <main id="journal">
+    <nav class="journal-nav" aria-label="Journal pages">
+      <a href="#profile">01 · The birthday girl</a>
+      <a href="#little-things">02 · Little things</a>
+      <a href="#letter">03 · A letter</a>
+      <a href="#surprises">04 · Open me</a>
+    </nav>
+
+    <section class="journal-page profile-page" id="profile">
+      <div class="page-label">PAGE 01 · PROFILE</div>
+      <h2>All about this sweet human</h2>
+
+      <div class="profile-layout">
+        <div class="teddy-frame">
+          <div class="teddy-picture">🧸</div>
+          <span class="sticker-caption">your little teddy pal</span>
+        </div>
+
+        <div class="profile-note">
+          <p><strong>Name:</strong> Sweet Cherry</p>
+          <p><strong>Birthday:</strong> Your special day</p>
+          <p><strong>Known for:</strong> Being wonderfully you</p>
+          <p><strong>Today's mood:</strong> Cake, cuddles & happiness</p>
+          <div class="tiny-hearts">♥ ♥ ♥ ♥ ♥</div>
+        </div>
+      </div>
+
+      <div class="doodle-row">🍒 ✧ 🧸 ✧ 🎀 ✧ 🍓</div>
+    </section>
+
+    <section class="journal-page favorites-page" id="little-things">
+      <div class="page-label">PAGE 02 · LITTLE THINGS</div>
+      <h2>Things that make life sweeter</h2>
+      <p class="page-subtitle">A few tiny joys to celebrate today.</p>
+
+      <div class="favorite-grid">
+        <article class="favorite-note note-pink">
+          <span class="note-icon">🍰</span>
+          <h3>Sweet treats</h3>
+          <p>Birthday cake, strawberries, and something yummy.</p>
+        </article>
+
+        <article class="favorite-note note-yellow">
+          <span class="note-icon">🌷</span>
+          <h3>Pretty things</h3>
+          <p>Fresh flowers, little bows, and lovely colors.</p>
+        </article>
+
+        <article class="favorite-note note-lilac">
+          <span class="note-icon">🧸</span>
+          <h3>Cozy moments</h3>
+          <p>Soft teddy hugs and a peaceful, happy day.</p>
+        </article>
+
+        <article class="favorite-note note-mint">
+          <span class="note-icon">✨</span>
+          <h3>New memories</h3>
+          <p>More laughter, more adventures, more reasons to smile.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="journal-page letter-page" id="letter">
+      <div class="page-label">PAGE 03 · OPEN WHEN YOU NEED A SMILE</div>
+      <div class="letter-decoration">💌</div>
+      <h2>A letter for your birthday</h2>
+
+      <div class="letter-paper">
+        <p>Dear Sweet Cherry,</p>
+
+        <p>
+          Happy Birthday! Today is all about celebrating you and the lovely
+          person you are. I hope this little journal makes your day feel
+          a bit more magical, like opening a tiny box full of happy things.
+        </p>
+
+        <p>
+          I hope the year ahead brings you gentle mornings, exciting
+          adventures, kind people, and dreams that slowly turn into
+          beautiful memories. May you always find reasons to laugh,
+          moments that make you feel proud, and little surprises when
+          you least expect them.
+        </p>
+
+        <p>
+          On days when life feels busy or a little difficult, remember
+          to be kind to yourself. You deserve the same care and warmth
+          that you give to others. Keep your hopes close, keep trying
+          the things that make your heart happy, and never forget that
+          being yourself is something worth celebrating.
+        </p>
+
+        <p>
+          So here’s to more cake, more cuddles, more silly moments,
+          more adventures, and a year filled with things that make
+          you smile. I hope this birthday is only the beginning of
+          something wonderful.
+        </p>
+
+        <p class="letter-signoff">
+          With lots of birthday love,<br>
+          Your little journal 💗
+        </p>
+      </div>
+    </section>
+
+    <section class="journal-page surprise-page" id="surprises">
+      <div class="page-label">PAGE 04 · LITTLE SURPRISES</div>
+      <h2>Open a tiny gift</h2>
+      <p class="page-subtitle">Tap a box to see what’s hiding inside.</p>
+
+      <div class="gift-grid">
+        <button class="gift-box" data-gift="wish">
+          <span>🎁</span>
+          <strong>A wish</strong>
+        </button>
+
+        <button class="gift-box" data-gift="hug">
+          <span>🧸</span>
+          <strong>A teddy hug</strong>
+        </button>
+
+        <button class="gift-box" data-gift="cherry">
+          <span>🍒</span>
+          <strong>A cherry note</strong>
+        </button>
+      </div>
+
+      <div class="gift-message hidden" id="giftMessage" aria-live="polite">
+        <span id="giftEmoji">💗</span>
+        <h3 id="giftTitle"></h3>
+        <p id="giftText"></p>
+      </div>
+
+      <button class="heart-button" id="heartButton" type="button">
+        Send some hearts 💕
+      </button>
+      <div id="heartArea" class="heart-area" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    Made with cherries, teddy bears, and a little bit of love 🍒
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
